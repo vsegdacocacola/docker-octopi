@@ -15,7 +15,7 @@ RUN set +x \
   && useradd pi \
   && usermod -a -G tty pi \
   && usermod -a -G dialout pi \
-  
+  && mkdir -p ${HOME} \
   && cd ${HOME} \
   && pip install pip --upgrade \
   && virtualenv venv \
