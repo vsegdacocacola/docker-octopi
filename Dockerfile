@@ -16,6 +16,10 @@ RUN set +x \
   && pip install octoprint \
   && set -x
 
+ADD ./start.sh /root/
+
+RUN chmod +x /root/start.sh
+
 EXPOSE 5000
 
-CMD "/usr/local/bin/octoprint serve --iknowwhatimdoing"
+CMD "start.sh"
