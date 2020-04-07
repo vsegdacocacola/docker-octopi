@@ -16,12 +16,8 @@ RUN set +x \
   && pip install octoprint \
   && set -x
 
-ADD ./start.sh /root/
-
-RUN chmod +x /root/start.sh
-
 EXPOSE 5000
 
 VOLUME /home/pi/Octoprint
 
-CMD [ "octoprint serve --iknowwhatiamdoing" ]
+CMD [ "/usr/local/bin/octoprint serve --iknowwhatiamdoing" ]
