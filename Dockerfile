@@ -22,4 +22,4 @@ RUN chmod +x /root/start.sh
 
 EXPOSE 5000
 
-CMD "start.sh"
+CMD [ "/root/start.sh" ]
