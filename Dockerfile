@@ -18,6 +18,4 @@ RUN set +x \
 
 EXPOSE 5000
 
-VOLUME /home/pi/Octoprint
-
 CMD "/usr/local/bin/octoprint serve --iknowwhatimdoing"
